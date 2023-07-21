@@ -1,0 +1,7 @@
+require("plugins.plugins-setup")
+require("plugins.lualine")
+require("plugins.nvim-tree")
+require("plugins.nvim-navigation")
+require("plugins.nvim-treesitter")
+require("core.options")
+require("core.keymaps")
