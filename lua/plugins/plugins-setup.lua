@@ -39,9 +39,18 @@ return require('packer').startup(function(use)
 
   -- 窗口定位
   use 'alexghergh/nvim-tmux-navigation'
-
+  
+  -- 语法高亮
   use 'nvim-treesitter/nvim-treesitter'
+  
+  -- 括号区分
   use 'HiPhish/rainbow-delimiters.nvim'
+
+  -- lsp语法补全
+  use {
+    'williamboman/mason.nvim',
+    run = ":MasonUpdate"
+  }
 
   if packer_bootstrap then
     require('packer').sync()

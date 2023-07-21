@@ -17,10 +17,10 @@ opt.wrap = false
 opt.cursorline = true
 
 -- 启动鼠标
-opt.mouse:append("a")
+opt.mouse = "a"
 
 -- 系统剪贴板
-opt.clipboard:append("unnamedplus")
+opt.clipboard = "unnamedplus"
 
 -- 默认新的窗口右和下
 opt.splitright = true
